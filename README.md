@@ -1,9 +1,7 @@
 # medium-exercism-rust
 
-Ilmu Komputer
-Universitas Negeri Jakarta
-Esai ini disusun untuk memenuhi tugas mata kuliah sistem operasi di semester 110
-saya akan menjelaskan bagaimana saya menyelesaikan triangle problem
+Esai ini disusun untuk memenuhi tugas mata kuliah sistem operasi di semester 110. 
+saya akan menjelaskan bagaimana saya menyelesaikan triangle. 
 
 
 # Triangle (segitiga)
@@ -37,7 +35,7 @@ kita harus menentukan apakah segitiga tersebut / array yang di berikan , tidak m
 ```
 ## Penjelasan fungsi all_sides_no_zero
 1. Membuat variable count untuk menghitung ada berapa panjang sisi yang bukan nol
-2. Cek setiap sisi segitiga tersebut apakah panjangnya lebih dari 0 atau bukan
+2. Cek setiap sisi segitiga tersebut apakah panjangnya lebih dari 0 atau bukan. menggunakan [array reference's](https://doc.rust-lang.org/std/primitive.array.html) untuk bisa di iterasi.
 3. Jika iya, maka count akan bertambah 1
 4. Karena function ini untuk mengecek apakah sisinya ada yang 0 , maka keluarannya adalah boolean
 5. Terakhir kita cek apakah count samadengan 3 atau tidak
@@ -51,7 +49,7 @@ kita harus menentukan apakah jumlah dari 2 sisi lebih dari atau sama dengan sisi
     }
 ```
 ## Penjelasan fungsi sum_of_length
-jika X + Y >= Z, X + Z >= Y dan Y + Z >= X fungsi tersebut akan menghasilkan sebuah boolean true dan sebaliknya akan menghasilkan boolean false. Fungsi ini adalah untuk menentukan apakah segitiga tersebut memenuhi salah satu syarat pembentukan segitiga.
+jika X + Y >= Z, X + Z >= Y dan Y + Z >= X fungsi tersebut akan menghasilkan sebuah boolean true dan sebaliknya akan menghasilkan boolean false. Fungsi ini adalah untuk menentukan apakah segitiga tersebut memenuhi salah satu syarat pembentukan segitiga. sides[0] , berarti saya mengambil value dari index ke 0 pada array sides ini biasanya disebut [slicing array](https://doc.rust-lang.org/rust-by-example/primitives/array.html) . 
 
 # Equal side
 tugas dari fungsi ini untuk menghitung ada berapa sisi yang sama. Dengan perbanding, 0 dengan 1 , 0 dengan 2, dan 1 dengan 2. jika pembanding sama panjang, maka akan dihitung 1 dan seterusnya.
