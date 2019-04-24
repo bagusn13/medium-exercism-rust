@@ -15,9 +15,14 @@ Untuk menyelesaikan masalah ini, pertama, kita harus memperhatikan syarat memben
 
 # Triangle inequality
 Fungsi ini untuk mengkonfimasi apakah array yang diberikan dapat dibuat bentuk menjadi segitiga atau tidak. 
-Adapun syarat-syarat untuk membentuk segitiga :
+Untuk membuat segitiga ada 2 syarat yang harus terpenuhi yaitu :
 1. Semua sisinya harus lebih besar dari nol.
 2. Jumlah panjang kedua sisi harus lebih besar dari atau sama dengan panjang sisi ketiga.
+```rust
+   fn inequality(sides: [u64; 3]) -> bool {
+        Triangle::sum_of_length(sides) && Triangle::all_sides_no_zero(sides)
+    }
+```
 
 # All sides are not zero
 kita harus menentukan apakah segitiga tersebut / array yang di berikan , tidak mempunyai sisi dengan panjang nol.
